@@ -77,6 +77,7 @@ st.sidebar.button(
 # Load movies only data
 movies_df = load_movies_df("./data/datasets/movies_df.pickle", "./data/datasets/poster.csv")
 
+st.write(movies_df.head())
 # Load users data with movies and ratings (warning: this is a large file, may affect performance)
 # users_df = load_users_df(movies_df, "./data/datasets/ratings.csv", "./data/datasets/links.csv")
 
